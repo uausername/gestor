@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ASL Tutor</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="app.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1 id="title">ASL Tutor</h1>
+    <select id="languageSelect">
+      <option value="en">English</option>
+      <option value="ru">Русский</option>
+    </select>
+    <button id="tutorialBtn">Tutorial</button>
+    <button id="practiceBtn">Practice</button>
+  </header>
+  <main>
+    <div id="videoContainer">
+      <video id="inputVideo" autoplay playsinline></video>
+      <canvas id="overlay"></canvas>
+    </div>
+    <div id="threeContainer"></div>
+    <div id="feedback"></div>
+  </main>
+</body>
+</html>
